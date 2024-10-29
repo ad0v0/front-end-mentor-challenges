@@ -1,0 +1,85 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --slate-900: hsl(212, 45%, 89%);
+    --slate-500: hsl(218, 44%, 22%);
+    --slate-300: hsl(216, 15%, 48%);
+
+    --spacing-500: 40px;
+    --spacing-300: 24px;
+    --spacing-200: 16px;
+
+    --text-preset-1-color: var(--slate-500);
+    --text-preset-1-size: 22px;
+    --text-preset-1-line-height: 1.2;
+    --text-preset-1-line-spacing: 0px;
+
+    --text-preset-2-color: var(--slate-300);
+    --text-preset-2-size: 15px;
+    --text-preset-2-line-height: 1.4;
+    --text-preset-2-line-spacing: 0.2px
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--slate-900);
+    height: 100%;
+}
+
+.page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.qr-code {
+    width: 320px;
+    padding: var(--spacing-200);
+    padding-bottom: var(--spacing-500);
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+.image-wrapper {
+    max-width: 288px;
+}
+
+.image-wrapper img {
+    border-radius: 10px;
+}
+
+.details-wrapper {
+    margin-top: var(--spacing-200);
+}
+
+.details-wrapper h1 {
+    margin: 0;
+    margin-bottom: var(--spacing-200);
+    text-align: center;
+    font-size: var(--text-preset-1-size);
+    line-height: var(--text-preset-1-line-height);
+    letter-spacing: var(--text-preset-1-line-spacing);
+    color: var(--text-preset-1-color);
+}
+
+.details-wrapper p {
+    margin: 0;
+    text-align: center;
+    font-size: var(--text-preset-2-size);
+    line-height: var(--text-preset-2-line-height);
+    letter-spacing: var(--text-preset-2-line-spacing);
+    color: var(--text-preset-2-color);}
