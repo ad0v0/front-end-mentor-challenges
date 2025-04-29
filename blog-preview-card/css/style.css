@@ -103,6 +103,11 @@ body {
 .details-wrapper a {
     text-decoration: none;
     color: var(--gray-950);
+    transition: color 0.2s ease;
+}
+
+.details-wrapper a:hover {
+    color: var(--yellow);
 }
 
 .details-wrapper .description {
